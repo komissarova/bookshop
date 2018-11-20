@@ -1,0 +1,275 @@
+﻿html, body {
+    height: 100%;
+}
+ 
+.container {
+    width: 50%;
+    margin: 0 25% 0 25%;
+    position: relative;
+    min-height: 100%;
+}
+
+* html .container {
+    height: 100%;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+nav {
+    float: right;
+    margin-right: 60px;
+}
+
+nav ul li {
+    color: #a66c6c;
+    font-style: italic;
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.content {
+    
+    padding-bottom: 120px;
+}
+
+.states li a:link, .states a:link {
+    color: #a66c6c;
+}
+
+.states li a:hover, .states a:hover {
+    color: #ba069c;
+}
+
+.states li a:focus, .states a:focus, #firstButton:focus {
+    font-size: 17px;
+}
+
+.states li a:active, .states a:active {
+    color: #9e0850;
+    font-size: medium;
+}
+	
+.headline { 
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea; 
+    clear: both;
+}
+    
+#shortdescription {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+#maindescription {
+    color: #484343;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mark {
+    list-style-type: none;
+}
+
+.mark li:before {
+    color: pink;
+    content: "*";
+    padding-right: 5px;
+}  
+
+.mark b {
+    color: #957e9c;
+    font-style: italic;
+}
+
+.mark span {
+    color: #707070;
+    font-style: italic;
+}
+
+input::placeholder, textarea::placeholder, input[value],label {
+    color: #957e9c;
+}
+
+label,
+input[value] {
+    font-weight: bold;
+}
+
+#formName {
+    text-transform: capitalize;
+} 
+
+#formMail:focus {
+    background-color: pink;
+    color: #9e0850;
+}
+
+#email {
+    padding-right: 21px;
+}
+
+#name {
+    padding-right: 11px;
+}
+
+#subject {
+    padding-right: 26px;
+}
+
+a img {
+    border: 3px solid #957e9c;
+}
+
+a:visited img {
+    border: 3px solid pink;
+}
+
+a:hover img { 
+    border: none;
+    margin: 3px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 40%;
+}
+
+td {
+    border: 3px solid #bfb2bd;
+    padding: 20px;
+    text-align: center;
+    background-color: #e0d5df;
+}
+
+/*caption {
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+*/
+
+.headWord {
+    background-image: url("../img/s6.jpg");/*background-color: #957e9c;*/
+    padding: 2px; 
+}
+
+.header {
+    height: 150px;
+    background-image: url("../img/s6.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto;
+}
+
+#maindescription::first-letter, .headline + p:nth-of-type(2)::first-letter, .headline + p span {
+   color: #957e9c;
+   font-style: italic;
+   font-weight: bold;
+   font-size: 18px;
+}
+ 
+.headline + p:nth-of-type(2)::first-line, #maindescription::first-line {
+   color: pink;
+}
+
+.footer {
+   height: 100px;
+   position: relative;
+   margin: -100px 25% 0 25%;
+}
+
+.footer p {
+   margin: 30px 30px;
+   padding: 10px 0 0;
+   background-image: linear-gradient(to right, #957e9c, #B9CFE6 10%, #B9CFE6 90%, #957e9c);
+   width: 157px;
+   float: right;
+}  
+
+.items {
+   float: left;
+   margin-bottom: 20px;
+}
+
+.block {
+   margin-left: 15px;
+   display: inline-block;
+   position: relative;
+   top: -15px;
+}
+
+#firstButton:hover {
+   background-color: #ba069c;
+}
+
+#firstButton:active {
+   background-color: #9e0850;
+   font-size: medium;
+}
+
+@media print {
+   .noPrint {
+       display: none;
+   }
+
+   html, body, .container, .content {
+       height: 50%;
+   }
+
+   /*
+   body > *:not(section) {
+       display: none;
+   }  
+      Не сработало, потому что section - дочерний элемент и тоже становится невидимым?
+      Есть ли способ сделать видимым только его и первый заголовок по-другому? 
+      Идентификаторы назначать я им тоже пробовала:(((
+   */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
